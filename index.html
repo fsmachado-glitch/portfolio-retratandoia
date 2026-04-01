@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RETRATANDOIA — Retratos Profissionais com Inteligência Artificial</title>
+  <meta name="description"
+    content="Transforme fotos comuns em retratos profissionais de alta performance. Qualidade de estúdio fotográfico — sem sair de casa, em até 24 horas.">
+  <meta name="keywords" content="fotografia, IA, inteligência artificial, retratos, fotos profissionais, LinkedIn">
+  <meta name="author" content="RetratandoIA">
+  <meta property="og:title" content="RETRATANDOIA — Retratos com Inteligência Artificial">
+  <meta property="og:description"
+    content="Sua melhor versão, recriada por IA. Qualidade de estúdio fotográfico — sem sair de casa.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">Retratando<span class="gradient-text">IA</span></div>
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+  <div class="floating-orb"></div>
+  <div class="floating-orb"></div>
+  <div class="floating-orb"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">Retratando<span class="dot" style="background: var(--accent-1);">IA</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="active" data-nav>Início</a></li>
+        <li><a href="#sobre" data-nav>Como Funciona</a></li>
+        <li><a href="#projetos" data-nav>Portfólio</a></li>
+        <li><a href="#precos" data-nav>Pacotes</a></li>
+        <li><a href="#depoimentos" data-nav>Depoimentos</a></li>
+        <li><a href="#faq" data-nav>FAQ</a></li>
+        <li><a href="#contato" class="nav-cta" data-nav>Começar Agora</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          Fotografia com Inteligência Artificial
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line">Sua melhor</span>
+          <span class="line"><span class="highlight gradient-text">versão,</span></span>
+          <span class="line" style="font-size: 0.6em; color: var(--text-secondary); font-weight: 500; margin-top: 8px;">
+            recriada por IA.
+          </span>
+        </h1>
+
+        <p class="hero-description">
+          Transforme fotos comuns em retratos profissionais de alta performance.
+          Qualidade de estúdio fotográfico — sem sair de casa, em até 24 horas.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#precos" class="btn-primary">
+            Ver Pacotes
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="#projetos" class="btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+            Ver o Portfólio
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" style="font-size: 2.5rem; line-height: 1;">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="10" width="40" height="28" rx="4" stroke="url(#cam-grad)" stroke-width="2.5" fill="none"/>
+                <circle cx="24" cy="24" r="8" stroke="url(#cam-grad)" stroke-width="2.5" fill="none"/>
+                <circle cx="24" cy="24" r="3" fill="url(#cam-grad)"/>
+                <path d="M36 16h4" stroke="url(#cam-grad)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 6l4 4M40 6l-4 4" stroke="url(#cam-grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                <text x="24" y="44" text-anchor="middle" fill="url(#cam-grad)" font-size="6" font-weight="700" font-family="sans-serif">AI</text>
+                <defs><linearGradient id="cam-grad" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="stat-label">Retratos com IA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" style="font-size: 2.5rem; line-height: 1;">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="url(#clock-grad)" stroke-width="2.5" fill="none"/>
+                <path d="M24 12v12l8 6" stroke="url(#clock-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="24" cy="24" r="2" fill="url(#clock-grad)"/>
+                <defs><linearGradient id="clock-grad" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="stat-label">Entrega em 24h</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" style="font-size: 2.5rem; line-height: 1;">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 38l10-14 8 6 8-10 14 18H4z" stroke="url(#photo-grad)" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+                <circle cx="34" cy="14" r="5" stroke="url(#photo-grad)" stroke-width="2.5" fill="none"/>
+                <rect x="2" y="6" width="44" height="36" rx="4" stroke="url(#photo-grad)" stroke-width="2.5" fill="none"/>
+                <defs><linearGradient id="photo-grad" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="stat-label">Qualidade Estúdio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
+            <img src="profile-opt.jpg" alt="Retrato profissional gerado por IA — RetratandoIA" id="heroPhoto">
+          </div>
+
+          <!-- Floating tech cards -->
+          <div class="floating-card card-1">
+            <div class="card-icon">📸</div>
+            <span>Alta Resolução</span>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon">🤖</div>
+            <span>IA Avançada</span>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-icon">⚡</div>
+            <span>Entrega 24h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       COMO FUNCIONA (ABOUT SECTION)
+       ============================================ -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-visual reveal">
+        <div class="photo-collage">
+          <div class="collage-photo collage-photo-1">
+            <img src="photo-01-opt.jpg" alt="Retrato profissional gerado por IA — Exemplo 1" loading="lazy">
+          </div>
+          <div class="collage-photo collage-photo-2">
+            <img src="photo-06-opt.jpg" alt="Retrato profissional gerado por IA — Exemplo 2" loading="lazy">
+          </div>
+          <div class="collage-label">
+            <span class="status-dot"></span>
+            Gerado por IA
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content reveal reveal-delay-2">
+        <span class="section-label">Como Funciona</span>
+        <h2 class="section-title">
+          Três passos para <span class="gradient-text">retratos incríveis</span>
+        </h2>
+        <p class="about-text">
+          Três passos simples para transformar fotos comuns em retratos profissionais de altíssima qualidade.
+        </p>
+
+        <div class="about-highlights steps-layout">
+          <div class="highlight-item step-card">
+            <div class="highlight-icon step-number">01</div>
+            <div class="step-content">
+              <h4 class="step-title">Escolha seu pacote</h4>
+              <span class="highlight-text">Do Essencial ao Business — selecione o plano ideal e faça o pagamento com segurança via Pix ou cartão.</span>
+            </div>
+          </div>
+          <div class="step-connector">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <div class="highlight-item step-card">
+            <div class="highlight-icon step-number">02</div>
+            <div class="step-content">
+              <h4 class="step-title">Envie suas fotos</h4>
+              <span class="highlight-text">Envie de 10 a 20 fotos suas de diferentes ângulos, expressões e iluminações.</span>
+            </div>
+          </div>
+          <div class="step-connector">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <div class="highlight-item step-card">
+            <div class="highlight-icon step-number">03</div>
+            <div class="step-content">
+              <h4 class="step-title">Receba seus retratos</h4>
+              <span class="highlight-text">Em até 24h, receba seus retratos profissionais prontos para LinkedIn, redes sociais e apresentações.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       ESTILOS (SKILLS)
+       ============================================ -->
+  <section class="skills" id="habilidades">
+    <div class="container">
+      <div class="skills-header reveal">
+        <span class="section-label">Estilos</span>
+        <h2 class="section-title">
+          8 estilos <span class="gradient-text">disponíveis</span>
+        </h2>
+        <p class="section-description">
+          Escolha entre diferentes cenários e ambientes para criar retratos que combinam com a sua personalidade e marca.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">👔</div>
+            <h3 class="skill-category-title">Executivo</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Escritório</span>
+            <span class="skill-tag">Formal</span>
+            <span class="skill-tag">Corporativo</span>
+            <span class="skill-tag">LinkedIn</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🎨</div>
+            <h3 class="skill-category-title">Artístico</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Estúdio</span>
+            <span class="skill-tag">Iluminação Dramática</span>
+            <span class="skill-tag">Criativo</span>
+            <span class="skill-tag">Editorial</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🌿</div>
+            <h3 class="skill-category-title">Lifestyle</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Natural</span>
+            <span class="skill-tag">Casual</span>
+            <span class="skill-tag">Exterior</span>
+            <span class="skill-tag">Redes Sociais</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">💼</div>
+            <h3 class="skill-category-title">Business</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Empreendedor</span>
+            <span class="skill-tag">Coaching</span>
+            <span class="skill-tag">Marca Pessoal</span>
+            <span class="skill-tag">Apresentação</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🎓</div>
+            <h3 class="skill-category-title">Acadêmico</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Professores</span>
+            <span class="skill-tag">Palestrantes</span>
+            <span class="skill-tag">Pesquisadores</span>
+            <span class="skill-tag">Institucional</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">⚕️</div>
+            <h3 class="skill-category-title">Saúde</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Médicos</span>
+            <span class="skill-tag">Dentistas</span>
+            <span class="skill-tag">Psicólogos</span>
+            <span class="skill-tag">Consultório</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">⚖️</div>
+            <h3 class="skill-category-title">Jurídico</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Advogados</span>
+            <span class="skill-tag">Escritórios</span>
+            <span class="skill-tag">Sóbrio</span>
+            <span class="skill-tag">Autoridade</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">✨</div>
+            <h3 class="skill-category-title">Influência</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Criadores</span>
+            <span class="skill-tag">Instagram</span>
+            <span class="skill-tag">YouTube</span>
+            <span class="skill-tag">TikTok</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       PORTFÓLIO (PROJECTS SECTION)
+       ============================================ -->
+  <section class="projects" id="projetos">
+    <div class="container">
+      <div class="projects-header reveal">
+        <span class="section-label">Galeria</span>
+        <h2 class="section-title">
+          Portfólio de <span class="gradient-text">Retratos</span>
+        </h2>
+        <p class="section-description">
+          Confira exemplos reais de retratos profissionais gerados pela nossa IA.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 — Executivo (Antes/Depois) -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-image before-after">
+            <div class="ba-side ba-before">
+              <img src="antes.jpeg" alt="Antes — Foto original do cliente">
+              <span class="ba-label ba-label-before">Antes</span>
+            </div>
+            <div class="ba-divider"></div>
+            <div class="ba-side ba-after">
+              <img src="depois-02-opt.jpg" alt="Depois — Retrato Executivo gerado por IA">
+              <span class="ba-label ba-label-after">Depois</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag react">Executivo</span>
+              <span class="project-tag typescript">LinkedIn</span>
+            </div>
+            <h3 class="project-title">Retrato Executivo</h3>
+            <p class="project-description">
+              Retrato corporativo com fundo de escritório moderno, iluminação profissional e acabamento premium.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-image">
+            <img src="lifestyle.jpg" alt="Retrato Lifestyle — RetratandoIA">
+            <div class="project-image-overlay">
+              <div class="overlay-actions">
+                <button class="overlay-btn" id="btn-demo-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="10 8 16 12 10 16 10 8" />
+                  </svg>
+                  Ampliar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag nextjs">Lifestyle</span>
+              <span class="project-tag tailwind">Natural</span>
+            </div>
+            <h3 class="project-title">Retrato Lifestyle</h3>
+            <p class="project-description">
+              Retrato casual com iluminação natural, ideal para redes sociais e marca pessoal autêntica.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 — Artístico (Antes/Depois) -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-image before-after">
+            <div class="ba-side ba-before">
+              <img src="FOTO-108.jpg" alt="Antes — Foto original do cliente">
+              <span class="ba-label ba-label-before">Antes</span>
+            </div>
+            <div class="ba-divider"></div>
+            <div class="ba-side ba-after">
+              <img src="depois-108.jpg" alt="Depois — Retrato Artístico gerado por IA">
+              <span class="ba-label ba-label-after">Depois</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag react">Artístico</span>
+              <span class="project-tag graphql">Estúdio</span>
+            </div>
+            <h3 class="project-title">Retrato Artístico</h3>
+            <p class="project-description">
+              Retrato com iluminação dramática de estúdio, ideal para portfólios criativos e editoriais.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 4 — Business (Antes/Depois) -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-image before-after">
+            <div class="ba-side ba-before">
+              <img src="FOTO-61.jpg" alt="Antes — Foto original do cliente">
+              <span class="ba-label ba-label-before">Antes</span>
+            </div>
+            <div class="ba-divider"></div>
+            <div class="ba-side ba-after">
+              <img src="61.jpg" alt="Depois — Retrato Business gerado por IA">
+              <span class="ba-label ba-label-after">Depois</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag flutter">Business</span>
+              <span class="project-tag firebase">Marca Pessoal</span>
+            </div>
+            <h3 class="project-title">Retrato Business</h3>
+            <p class="project-description">
+              Mix de ambientes profissionais para construir uma presença digital forte e consistente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       PRICING SECTION (EXPERIENCE)
+       ============================================ -->
+  <section class="experience" id="precos">
+    <div class="container">
+      <div class="experience-header reveal">
+        <span class="section-label">Pacotes</span>
+        <h2 class="section-title">
+          Escolha seu <span class="gradient-text">plano</span>
+        </h2>
+        <p class="section-description">
+          Resultados profissionais entregues em até 24 horas. Qualidade de estúdio pelo preço de um almoço.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Essencial -->
+        <div class="pricing-card reveal">
+          <div class="pricing-card-inner">
+            <div class="pricing-plan-name">Essencial</div>
+            <p class="pricing-plan-desc">Para quem quer uma imagem profissional e impactante com qualidade de estúdio.</p>
+            <h3 class="pricing-price">R$&thinsp;197</h3>
+            <p class="pricing-billing">pagamento único</p>
+            <div class="pricing-features">
+              <p class="pricing-feature"><span class="feature-check">✓</span> 05 Fotos Profissionais</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> 02 opções de cenários</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Retoque premium de pele</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Alta resolução</p>
+            </div>
+            <a href="https://wa.me/5521992589261?text=Olá! Gostaria de saber mais sobre o pacote Essencial." target="_blank" class="btn-primary pricing-cta">Selecionar plano</a>
+          </div>
+        </div>
+
+        <!-- Profissional -->
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Mais popular</div>
+          <div class="pricing-card-inner">
+            <div class="pricing-plan-name">Profissional</div>
+            <p class="pricing-plan-desc">Para profissionais que precisam de variedade e presença digital forte.</p>
+            <h3 class="pricing-price">R$&thinsp;397</h3>
+            <p class="pricing-billing">pagamento único</p>
+            <div class="pricing-features">
+              <p class="pricing-feature"><span class="feature-check">✓</span> 12 Fotos Profissionais</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Até 04 opções de estilos</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Cenários variados</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Otimizado para LinkedIn</p>
+            </div>
+            <a href="https://wa.me/5521992589261?text=Olá! Gostaria de saber mais sobre o pacote Profissional." target="_blank" class="btn-primary pricing-cta">Selecionar plano</a>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-card-inner">
+            <div class="pricing-plan-name">Business</div>
+            <p class="pricing-plan-desc">Para quem quer o máximo — volume, estilo e consultoria personalizada.</p>
+            <h3 class="pricing-price">R$&thinsp;547</h3>
+            <p class="pricing-billing">pagamento único</p>
+            <div class="pricing-features">
+              <p class="pricing-feature"><span class="feature-check">✓</span> 18 Fotos Profissionais</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Mix completo de ambientes</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Consultoria de Estilo Digital</p>
+              <p class="pricing-feature"><span class="feature-check">✓</span> Entrega Prioritária — 24h</p>
+            </div>
+            <a href="https://wa.me/5521992589261?text=Olá! Gostaria de saber mais sobre o pacote Business." target="_blank" class="btn-primary pricing-cta">Selecionar plano</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="trust-badges reveal reveal-delay-3">
+        <div class="trust-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Pagamento seguro</span>
+        </div>
+        <div class="trust-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Satisfação garantida</span>
+        </div>
+        <div class="trust-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Entrega em até 24h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       DEPOIMENTOS
+       ============================================ -->
+  <section class="experience" id="depoimentos">
+    <div class="container">
+      <div class="experience-header reveal">
+        <span class="section-label">Depoimentos</span>
+        <h2 class="section-title">
+          O que dizem <span class="gradient-text">nossos clientes</span>
+        </h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Fiquei impressionado com a qualidade. Parece foto de estúdio profissional. Atualizei meu LinkedIn e recebi vários elogios dos contatos."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Rafael M.</div>
+              <div class="testimonial-role">Consultor de Negócios · São Paulo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Resultado incrível e rápido! Em menos de 24h tinha 40 fotos profissionais lindas. Vale demais o investimento para quem quer se destacar."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Ana C.</div>
+              <div class="testimonial-role">Diretora de Marketing · Rio de Janeiro</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Uso as fotos em todos os meus materiais de negócio. O pacote Business foi perfeito — qualidade e quantidade que eu precisava para a minha marca."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">L</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Lucas T.</div>
+              <div class="testimonial-role">Empreendedor · Belo Horizonte</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       FAQ SECTION
+       ============================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-header reveal">
+        <span class="section-label">Dúvidas</span>
+        <h2 class="section-title">
+          Perguntas <span class="gradient-text">frequentes</span>
+        </h2>
+        <p class="section-description">
+          Respostas para as dúvidas mais comuns sobre nosso serviço de retratos com IA.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona a geração de fotos com IA?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>A partir das fotos que você envia, treinamos um modelo personalizado de IA que aprende suas características faciais únicas — formato do rosto, expressões, tom de pele. Depois, geramos novos retratos em cenários e estilos profissionais, mantendo total fidelidade à sua aparência real.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            <span>As fotos ficam parecidas comigo de verdade?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! A fidelidade ao seu rosto é nossa prioridade número um. O resultado final é tão natural que parece ter sido feito em estúdio fotográfico. Se algum retrato não atender suas expectativas, geramos novos sem custo adicional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quais tipos de foto devo enviar?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Envie de 10 a 20 fotos com boa iluminação, de diferentes ângulos (frente, perfil, 3/4), variando expressões. Fotos de celular mesmo, sem filtros, já funcionam perfeitamente. Após a compra, enviamos um guia completo por WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            <span>Em quanto tempo recebo as fotos?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>A entrega é feita em até 24 horas após recebermos todas as suas fotos de referência. No pacote Business, oferecemos entrega prioritária.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question" aria-expanded="false">
+            <span>Posso usar as fotos no LinkedIn e redes sociais?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Com certeza! Todas as fotos são entregues em alta resolução, otimizadas para LinkedIn, Instagram, WhatsApp Business, sites profissionais, cartões de visita e qualquer outro uso comercial ou pessoal. Você recebe direito de uso total.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quais formas de pagamento vocês aceitam?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Aceitamos Pix, cartão de crédito e boleto bancário. Para empresas que precisam de nota fiscal, disponibilizamos emissão de NF-e para todos os pacotes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       CTA BANNER
+       ============================================ -->
+  <section class="cta-banner" id="cta">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="cta-title">
+          Pronto para transformar sua <span class="gradient-text">imagem profissional?</span>
+        </h2>
+        <p class="cta-description">
+          Junte-se a centenas de profissionais que já elevaram sua presença digital com retratos de alta performance.
+        </p>
+        <div class="cta-actions">
+          <a href="https://wa.me/5521992589261?text=Olá! Gostaria de saber mais sobre os pacotes de retratos com IA." target="_blank" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar pelo WhatsApp
+          </a>
+          <a href="#precos" class="btn-secondary">
+            Ver Pacotes
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-info reveal">
+        <span class="section-label">Contato</span>
+        <h2 class="section-title">
+          Vamos <span class="gradient-text">conversar?</span>
+        </h2>
+        <p class="section-description">
+          Entre em contato para tirar dúvidas, solicitar um orçamento personalizado ou simplesmente bater um papo sobre o seu projeto.
+        </p>
+
+        <div class="contact-channels">
+          <a href="mailto:contato@retratandoia.com" class="contact-channel">
+            <div class="channel-icon">✉️</div>
+            <div class="channel-details">
+              <div class="channel-label">Email</div>
+              <div class="channel-value">contato@retratandoia.com</div>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a href="https://wa.me/5521992589261" target="_blank" rel="noopener" class="contact-channel">
+            <div class="channel-icon">📱</div>
+            <div class="channel-details">
+              <div class="channel-label">WhatsApp</div>
+              <div class="channel-value">(21) 99258-9261</div>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper reveal reveal-delay-2">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" id="name" class="form-input" placeholder="Seu nome completo" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" placeholder="seuemail@exemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Pacote de Interesse</label>
+            <input type="text" id="subject" class="form-input" placeholder="Essencial, Profissional ou Business">
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea id="message" class="form-textarea" placeholder="Conte-nos sobre o que você precisa..."
+              required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">
+            Enviar Mensagem
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer-brand">Retratando<span class="gradient-text">IA</span></a>
+      <p class="footer-text">© 2026 RETRATANDOIA · <a href="https://wa.me/5521992589261" target="_blank" style="color: inherit; text-decoration: none;">(21) 99258-9261</a></p>
+      <div class="footer-socials">
+        <a href="https://wa.me/5521992589261" target="_blank" rel="noopener" class="social-link"
+          aria-label="WhatsApp" id="social-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/retratandoia" target="_blank" rel="noopener" class="social-link"
+          aria-label="Instagram" id="social-instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5521992589261?text=Olá! Gostaria de saber mais sobre os retratos com IA." target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Fale conosco pelo WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Fale conosco!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
