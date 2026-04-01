@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="ai-lens" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <radialGradient id="lens-dark" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9333EA" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer camera body/lens ring -->
+  <circle cx="50" cy="50" r="46" fill="url(#lens-dark)" stroke="url(#ring)" stroke-width="8"/>
+  
+  <!-- Inner lens hole -->
+  <circle cx="50" cy="50" r="30" fill="#030305" stroke="#333" stroke-width="4"/>
+  
+  <!-- Inner glow ->
+  <circle cx="50" cy="50" r="28" fill="url(#ai-lens)" opacity="0.3"/>
+  
+  <!-- AI Sparkle/Star in center -->
+  <path d="M50 20 C 50 45, 45 50, 20 50 C 45 50, 50 55, 50 80 C 50 55, 55 50, 80 50 C 55 50, 50 45, 50 20 Z" fill="url(#ring)"/>
+  <circle cx="50" cy="50" r="6" fill="#fff" opacity="0.8"/>
+  
+  <!-- Lens curve reflection -->
+  <path d="M25 45 A 26 26 0 0 1 75 45" fill="none" stroke="white" stroke-width="4" opacity="0.25" stroke-linecap="round"/>
+</svg>
